@@ -7,10 +7,10 @@ function App() {
   // console.log("53" - 3);
 
   const addValue = () => {
-    setCounter(counter + 1);
+    if (counter < 10) setCounter(counter + 1);
   };
   const removeValue = () => {
-    setCounter(counter - 1);
+    if (counter > 0) setCounter(counter - 1);
   };
   return (
     <>
